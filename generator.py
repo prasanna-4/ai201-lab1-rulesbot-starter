@@ -35,5 +35,42 @@ def generate_response(query, retrieved_chunks):
             "Try rephrasing your question — or check that your ingestion pipeline is working."
         )
 
-    # Your implementation here.
-    return "⚙️ Response generation not yet implemented. Complete Milestone 3 to activate answers."
+    # Grounding is enforced here. We prohibit specific behaviors (no outside
+    # knowledge, no guessing) and prescribe an exact fallback sentence so an
+    # honest "I don't know" is a defined, detectable output.
+    system_prompt = (
+        "You are RulesBot, a board game rules assistant. Answer the user's "
+        "question using ONLY the rule text provided in the context below. Do not "
+        "use any outside knowledge about board games, and do not guess or fill in "
+        "gaps from what you already know. If the answer is not contained in the "
+        "provided context, reply exactly: \"I couldn't find that in the loaded "
+        "rule books.\" Do not add information that is not stated in the context, "
+        "even if it sounds plausible.\n\n"
+        "Always state which game your answer is about, naming the game explicitly "
+        "(e.g. \"According to the Catan rules, ...\"). If the relevant rules come "
+        "from more than one game, answer each game separately and label each part "
+        "with its game."
+    )
+
+    # Format each chunk as a numbered, game-labelled block. Explicit source
+    # boundaries help the model attribute facts to the right document and keep
+    # rules from different games from blending together.
+    context_blocks = []
+    for i, chunk in enumerate(retrieved_chunks, start=1):
+        context_blocks.append(
+            f"[Source {i} — {chunk['game']}]\n{chunk['text']}"
+        )
+    context = "\n\n".join(context_blocks)
+
+    user_message = f"CONTEXT:\n{context}\n\nQUESTION: {query}"
+
+    response = _client.chat.completions.create(
+        model=LLM_MODEL,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_message},
+        ],
+        temperature=0,
+    )
+
+    return response.choices[0].message.content

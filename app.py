@@ -123,6 +123,7 @@ with gr.Blocks(
                         <li>🌍 Risk</li>
                         <li>🚂 Ticket to Ride</li>
                         <li>🃏 Uno</li>
+                        <li>🔤 Scrabble</li>
                     </ul>
                     <hr style="border:none; border-top:1px solid #ddd6fe; margin:0.75rem 0;">
                     <p style="font-size:0.75rem; color:#7c3aed; margin:0; line-height:1.5;">

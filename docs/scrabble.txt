@@ -1,0 +1,46 @@
+SCRABBLE — OFFICIAL RULES SUMMARY
+
+OVERVIEW
+Scrabble is a word game for 2 to 4 players. Players take turns forming words on a 15x15 grid using lettered tiles, scoring points based on the letters used and the premium squares the word covers. The game rewards both vocabulary and tactical placement. When the tiles run out and one player empties their rack, the game ends and the highest score wins.
+
+COMPONENTS
+A 15x15 game board printed with premium squares, 100 letter tiles, four racks (one per player), and a bag to hold and draw tiles. The 100 tiles consist of 98 lettered tiles with printed point values and 2 blank tiles worth zero points. Common letters such as E, A, I, O, N, R, and T appear many times with low values; rare letters such as Q and Z appear once each and are worth 10 points.
+
+TILE VALUES
+0 points: blank tile. 1 point: E, A, I, O, N, R, T, L, S, U. 2 points: D, G. 3 points: B, C, M, P. 4 points: F, H, V, W, Y. 5 points: K. 8 points: J, X. 10 points: Q, Z.
+
+SETUP
+Place the board in the center. Each player draws one tile; the player with the letter closest to "A" goes first, and a blank beats any letter. Return the drawn tiles to the bag. Each player then draws 7 tiles and places them on their rack, hidden from opponents.
+
+THE FIRST WORD
+The first player combines two or more of their tiles to form a word and places it on the board reading left to right in a row, or downward in a column. The first word must cover the center star square. Diagonal words are never allowed.
+
+TAKING A TURN
+On your turn you may do one of three things: (1) place tiles to form a new word, (2) exchange any number of your tiles for new ones from the bag (only allowed if at least 7 tiles remain in the bag), forfeiting your turn, or (3) pass. After playing tiles, draw new tiles to return your rack to 7, as long as tiles remain in the bag.
+
+PLACING WORDS
+Every word made must read either left to right or top to bottom. New words must connect to tiles already on the board. A new play may add one or more letters to existing words, place a word at right angles to a word already on the board, or place a complete word parallel to an existing word so that adjacent tiles also form complete words. Every sequence of two or more letters formed by a play, in any direction, must be a valid word.
+
+SCORING A WORD
+Sum the point values of the tiles in the word, then apply premium squares covered by newly placed tiles. A blank tile scores zero regardless of the letter it represents. Premium squares only count when a tile is first placed on them; they have no effect on later turns.
+
+PREMIUM SQUARES
+Double Letter Score (light blue): doubles the value of the letter placed on it. Triple Letter Score (dark blue): triples the value of the letter placed on it. Double Word Score (pink): doubles the value of the entire word; the center star is a Double Word Score square. Triple Word Score (red): triples the value of the entire word. Letter premiums are applied before word premiums. If a word covers two Double Word Score squares, the word value is doubled and then doubled again (four times the base).
+
+THE BINGO BONUS
+If a player uses all 7 tiles from their rack in a single turn, they score a 50-point bonus in addition to the word score. This bonus is added after any premium squares are applied.
+
+BLANK TILES
+The two blank tiles can represent any letter. The player declares which letter it stands for when placing it, and it keeps that letter for the rest of the game. A blank always scores zero points, even on a premium letter square, though it can still sit on a word-premium square to multiply the rest of the word.
+
+CHALLENGING A WORD
+A player may challenge any word an opponent has just played, before the next player takes a turn. The challenged words are looked up in the agreed dictionary. If any challenged word is invalid, the player who made the play removes the tiles and forfeits that turn. If all challenged words are valid, the challenger loses their next turn (penalty varies by rule set). Words are only checked when challenged, not automatically.
+
+EXCHANGING AND PASSING
+Instead of playing a word, a player may exchange tiles or pass. Exchanging is only permitted while at least 7 tiles remain in the bag. A pass scores zero. If all players pass twice in a row, the game ends.
+
+END OF THE GAME
+The game ends when all tiles have been drawn from the bag and one player has used all the tiles on their rack, or when no further plays are possible. Play also ends if both players pass two consecutive turns.
+
+FINAL SCORING
+When the game ends, each player subtracts the total value of the tiles remaining on their rack from their score. If one player has emptied their rack, that player adds the sum of all opponents' remaining tile values to their own score. The player with the highest final score wins. In the case of a tie, the player who had the highest score before adjustments wins.

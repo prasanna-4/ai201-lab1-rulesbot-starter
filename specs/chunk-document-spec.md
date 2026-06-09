@@ -1,4 +1,4 @@
-# Spec: `chunk_document()`
+
 
 **File:** `ingest.py`
 **Status:** Pre-implemented — read through this spec and the code in `ingest.py` before moving to Milestone 2.
@@ -116,11 +116,25 @@ handle these cases better, at the cost of more implementation complexity.
 **Actual chunk count produced across all 8 rule books:**
 
 ```
-[your answer here]
+149 chunks total:
+  Catan 18, Clue 21, Codenames 16, Monopoly 23, Pandemic 18,
+  Risk 20, Ticket to Ride 16, Uno 17.
+
+The count tracks document length almost perfectly linearly — roughly
+one chunk per 250 characters, which is exactly the step size
+(chunk_size 300 − overlap 50). The longest doc (Monopoly, 5645 chars)
+produced the most chunks; the shortest (Codenames/Ticket to Ride,
+~3800–3900 chars) produced the fewest.
 ```
 
 **One thing that surprised you or didn't match your expectations:**
 
 ```
-[your answer here]
+The min_length = 50 filter barely does anything on these documents.
+The spec frames it as an important noise filter, but it discarded only
+2 chunks across all 8 rule books (1 in Risk, 1 in Uno) — everything
+else cleared the threshold. The rule books are clean, dense text with
+very little stray whitespace or header junk, so the filter that sounded
+significant in theory was nearly a no-op in practice. It would matter
+much more on messier source text (PDFs, scanned docs, heavy formatting).
 ```
